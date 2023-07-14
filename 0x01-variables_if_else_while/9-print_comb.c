@@ -1,26 +1,24 @@
 #include <stdio.h>
-
 /**
-  *main - main code block
-  *Description: a program that prints all possible combinations of
-  *single-digit numbers, each followed by a comma then space.
-  *Return: 0 - returns good value
-  */
+ *main - main code block
+ *Description: a program that prints all possible combinations of
+ *single-digit numbers, each followed by a comma then space.
+ *Return: 0 - returns good value
+ */
+
 int main(void)
 {
-	char i = '0';
+	int num;
 
-	while (i <= '9')
+	for (num = 0; num < 10; num++)
 	{
-		putchar(i);
-		if (i != '9')
+		putchar(num + '0');
+		if (num != 9)
 		{
 			putchar(',');
 			putchar(' ');
 		}
-		i++;
 	}
-
 	putchar('\n');
 	return (0);
 }
