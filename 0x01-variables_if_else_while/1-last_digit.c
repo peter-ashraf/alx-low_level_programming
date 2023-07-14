@@ -2,10 +2,14 @@
 #include <time.h>
 #include <stdio.h>
 
-/* A code that assigns a random number to the variable n each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable n. */
+/**
+ * main - Entry point of the program
+ *
+ * Return: Always 0
+ */
 int main(void)
 {
-	int n,m;
+	int n, m;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
@@ -18,7 +22,7 @@ int main(void)
 	{
 		printf("Last digit of %i is %d and is 0", n, m);
 	}
-	else if (0 < m <)
+	else if (m < 6)
 	{
 		printf("Last digit of %i is %d and is less than 6 and not 0", n, m);
 	return (0);
