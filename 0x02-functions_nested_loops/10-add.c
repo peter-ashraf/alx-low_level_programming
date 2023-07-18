@@ -1,7 +1,8 @@
 #include "main.h"
 /**
   * add - takes two integers and adds them.
-  *
+  * @a: int type number
+  * @b: int type number
   * Return: returns result of summition
   */
 

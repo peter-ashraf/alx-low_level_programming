@@ -2,7 +2,7 @@
 #include "main.h"
 /**
   * print_to_98 - prints from input number to 98
-  *
+  * @n: int type number.
   * Return: always 0
   */
 
