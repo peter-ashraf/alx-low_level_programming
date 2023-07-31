@@ -2,8 +2,8 @@
 
 /**
   * *_strpbrk - searches a string for any of a set of bytes
-  *@*s: char type string
-  *@*accept: char type string
+  *@s: char type string
+  *@accept: char type string
   *Return: pointer to bytes in s or NULL if no such bytes is found
   */
 

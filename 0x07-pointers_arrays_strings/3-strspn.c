@@ -2,8 +2,8 @@
 
 /**
   * _strspn - gets the length of a prefix substring
-  *@*s: char type string
-  *@*accept: char type string
+  *@s: char type string
+  *@accept: char type string
   *Return: number of bytes
   */
 
@@ -12,7 +12,7 @@ unsigned int _strspn(char *s, char *accept)
 	int i;
 	int j = 0;
 
-	while(*s)
+	while (*s)
 	{
 		for (i = 0; accept[i]; i++)
 		{
@@ -21,7 +21,7 @@ unsigned int _strspn(char *s, char *accept)
 				j++;
 				break;
 			}
-			else if (accept[i + 1] =='\0')
+			else if (accept[i + 1] == '\0')
 			{
 				return (j);
 			}
