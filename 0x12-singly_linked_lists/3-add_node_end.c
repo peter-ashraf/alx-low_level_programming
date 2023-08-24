@@ -11,19 +11,20 @@
  *         Otherwise - the address of the new element.
  */
 
-list_t *add_node_end(list_t **head, const char *str) 
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new_node = (list_t *)malloc(sizeof(list_t));
+
 	if (new_node == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 
 	new_node->str = strdup(str);
 	if (new_node->str == NULL)
 	{
 		free(new_node);
-		return NULL;
+		return (NULL);
 	}
 
 	new_node->len = strlen(str);
@@ -36,6 +37,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	else
 	{
 		list_t *current = *head;
+
 		while (current->next != NULL)
 		{
 			current  = current->next;
@@ -43,5 +45,5 @@ list_t *add_node_end(list_t **head, const char *str)
 		current->next = new_node;
 	}
 
-	return new_node;
+	return (new_node);
 }
